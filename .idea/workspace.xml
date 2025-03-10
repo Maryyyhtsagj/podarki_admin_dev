@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d31aa0cd-ef09-46c8-b8c7-f6d04ee3b905" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2pPLC49L85LMK6M2vvqpLpe1Nun" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/src/app/modules/sellers/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.proxy.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/modules/sellers/models" />
+      <recent name="$PROJECT_DIR$/src/app/components/dropdown/ui" />
+      <recent name="$PROJECT_DIR$/src/app/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/app/components/Dropdown" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="proxy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="proxy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.proxy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d31aa0cd-ef09-46c8-b8c7-f6d04ee3b905" name="Changes" comment="" />
+      <created>1732662632065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732662632065</updated>
+      <workItem from="1732662633110" duration="63000" />
+      <workItem from="1732704320312" duration="1398000" />
+      <workItem from="1732722770324" duration="3282000" />
+      <workItem from="1732791865092" duration="3015000" />
+      <workItem from="1732871419051" duration="1774000" />
+      <workItem from="1732881708720" duration="45000" />
+      <workItem from="1732908088881" duration="2655000" />
+      <workItem from="1732969354357" duration="3494000" />
+      <workItem from="1732972867620" duration="12905000" />
+      <workItem from="1733183198280" duration="3850000" />
+      <workItem from="1733239860596" duration="4197000" />
+      <workItem from="1733310422626" duration="598000" />
+      <workItem from="1733311210257" duration="252000" />
+      <workItem from="1733311532904" duration="668000" />
+      <workItem from="1733312235517" duration="681000" />
+      <workItem from="1733313096963" duration="685000" />
+      <workItem from="1733313788360" duration="54000" />
+      <workItem from="1733313848875" duration="1000" />
+      <workItem from="1733314665071" duration="17684000" />
+      <workItem from="1733432619841" duration="1352000" />
+      <workItem from="1733511827230" duration="1439000" />
+      <workItem from="1733577437223" duration="112000" />
+      <workItem from="1733577557210" duration="5784000" />
+      <workItem from="1733591761349" duration="1374000" />
+      <workItem from="1733837441068" duration="2385000" />
+      <workItem from="1733863395880" duration="3964000" />
+      <workItem from="1733869803847" duration="1102000" />
+      <workItem from="1733939440211" duration="2234000" />
+      <workItem from="1734082403851" duration="18000" />
+      <workItem from="1734095536474" duration="7739000" />
+      <workItem from="1734206225631" duration="3519000" />
+      <workItem from="1734355987791" duration="6035000" />
+      <workItem from="1734383564856" duration="2308000" />
+      <workItem from="1734470580734" duration="842000" />
+      <workItem from="1734477132082" duration="1502000" />
+      <workItem from="1734623519976" duration="4561000" />
+      <workItem from="1734640166626" duration="6689000" />
+      <workItem from="1734647136046" duration="4787000" />
+      <workItem from="1734778542959" duration="3612000" />
+      <workItem from="1734782326538" duration="3162000" />
+      <workItem from="1734902618392" duration="8310000" />
+      <workItem from="1734912326594" duration="675000" />
+      <workItem from="1735056141507" duration="28000" />
+      <workItem from="1735056930300" duration="19000" />
+      <workItem from="1735057246925" duration="2263000" />
+      <workItem from="1735548829040" duration="1882000" />
+      <workItem from="1735750264289" duration="945000" />
+      <workItem from="1736070860682" duration="17914000" />
+      <workItem from="1736105635134" duration="6488000" />
+      <workItem from="1736421292386" duration="4990000" />
+      <workItem from="1737035163840" duration="5075000" />
+      <workItem from="1737558202712" duration="2094000" />
+      <workItem from="1738683373501" duration="2549000" />
+      <workItem from="1739208410561" duration="111000" />
+      <workItem from="1739471857671" duration="1203000" />
+      <workItem from="1739820728201" duration="6000" />
+      <workItem from="1741212188376" duration="1137000" />
+      <workItem from="1741614596621" duration="1362000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

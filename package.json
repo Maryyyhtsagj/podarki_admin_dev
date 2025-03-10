@@ -1,0 +1,73 @@
+{
+  "name": "vite-template-redux",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development vite",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "type-check": "tsc",
+    "proxy": "lcp --proxyUrl http://79.174.80.241:3001/"
+  },
+  "dependencies": {
+    "@react-native-firebase/app": "^21.6.1",
+    "@react-native-firebase/messaging": "^21.6.1",
+    "@reduxjs/toolkit": "1.8.1",
+    "axios": "1.4.0",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^13.0.2",
+    "http-proxy": "^1.18.1",
+    "local-cors-proxy": "^1.1.0",
+    "localforage": "1.10.0",
+    "match-sorter": "6.3.1",
+    "react": "18.2.0",
+    "react-datepicker": "^4.16.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-redux": "8.0.1",
+    "react-router-dom": "6.14.1",
+    "reactjs-popup": "2.0.5",
+    "socket.io-client": "^4.7.4",
+    "sort-by": "1.2.0",
+    "styled-components": "6.0.4"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "9.2.0",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.2.5",
+    "@types/react": "18.0.15",
+    "@types/react-datepicker": "^4.11.2",
+    "@types/react-dom": "18.0.6",
+    "@types/testing-library__jest-dom": "5.14.5",
+    "@vitejs/plugin-react": "4.0.0",
+    "eslint": "8.0.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "jsdom": "21.1.0",
+    "prettier": "2.7.1",
+    "prettier-config-nick": "1.0.2",
+    "typescript": "5.0.2",
+    "vite": "4.0.0",
+    "vitest": "0.30.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-no-target-blank": "off"
+    }
+  },
+  "prettier": "prettier-config-nick"
+}
