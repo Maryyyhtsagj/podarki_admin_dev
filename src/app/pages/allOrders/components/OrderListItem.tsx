@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { useAppDispatch, useAppSelector } from "../../../settings/redux/hooks"
 import Modal from "../../../components/Modal"
@@ -28,6 +28,16 @@ type TableProps = {
   items: TableItem[]
 }
 
+type GoodType = {
+  _id: string
+  title: string
+  count: number
+  price: {
+    $numberDecimal: string
+  }
+  photo_list?: string[]
+}
+
 type FinanceListItemProps = {
   info: {
     order_number?: string
@@ -43,6 +53,7 @@ type FinanceListItemProps = {
     payAmount: number
   }
   isOrder?: boolean
+  goods?: GoodType[]
 }
 
 const Container = styled.div`
@@ -63,14 +74,11 @@ const Cell = styled.td`
   border-left: 1px solid ${ColorsUI.border};
   text-align: left;
   border-top: 1px solid ${ColorsUI.border};
-  border-left: 1px solid ${ColorsUI.border};
 `
 const FirstCell = styled.td`
   padding: 10px;
-  border-left: 1px solid ${ColorsUI.border};
   text-align: left;
   border-top: 1px solid ${ColorsUI.border};
-  border-left: none;
 `
 
 const HeaderCell = styled.th`
@@ -85,7 +93,6 @@ const FirstHeaderCell = styled.th`
   background-color: ${ColorsUI.headerBackground};
   font-weight: normal;
   text-align: left;
-  border-left: none;
 `
 const FooterCell = styled.td`
   padding: 10px;
@@ -97,6 +104,10 @@ const FooterCell = styled.td`
 `
 
 const OrderTable: React.FC<TableProps> = ({ items }) => {
+  const totalPrice = items.reduce(
+    (acc, item) => acc + item.price * item.count,
+    0,
+  )
   return (
     <Container>
       <Table>
@@ -128,9 +139,9 @@ const OrderTable: React.FC<TableProps> = ({ items }) => {
               <Cell>
                 <TextUI ag={Ag["400_14"]} text={`${item.price}`} />
               </Cell>
-              {/*<Cell>*/}
-              {/*  <TextUI ag={Ag["400_14"]} text={`${item.total}`} />*/}
-              {/*</Cell>*/}
+              <Cell>
+                <TextUI ag={Ag["400_14"]} text={`${item.price * item.count}`} />
+              </Cell>
             </tr>
           ))}
         </tbody>
@@ -140,7 +151,11 @@ const OrderTable: React.FC<TableProps> = ({ items }) => {
               <TextUI ag={Ag["600_14"]} text="Всего:" color={ColorsUI.green} />
             </FooterCell>
             <FooterCell>
-              <TextUI ag={Ag["600_14"]} text="14750₽" color={ColorsUI.green} />
+              <TextUI
+                ag={Ag["600_14"]}
+                text={`${totalPrice}₽`}
+                color={ColorsUI.green}
+              />
             </FooterCell>
           </tr>
         </tfoot>
@@ -153,31 +168,21 @@ export const OrderListItem: React.FC<FinanceListItemProps> = ({
   info,
   finances,
   isOrder = false,
+  goods = [],
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const navigate = useNavigate()
-  const dispatch = useAppDispatch()
-  const { currentOrder } = useAppSelector(selectSellersValues)
-  const params = useParams()
-  const orderId = params.order_id || "674e4d53b97952bd4d722b62"
-
-  useEffect(() => {
-    dispatch(getSingleOrder(orderId))
-  }, [dispatch, orderId])
 
   const handleModalToggle = () => {
-    setIsModalOpen((prev) => !prev)
+    setIsModalOpen(!isModalOpen)
   }
 
-  // Используем данные из currentOrder, если они есть
-  const items =
-    currentOrder?.count?.map((item) => ({
-      title: item.title,
-      price: item.price,
-      count: item.count,
-    })) || []
-
-  const fullAmount = currentOrder?.full_amount?.$numberDecimal || 0
+  const items: TableItem[] = goods.map((good) => ({
+    _id: good._id,
+    title: good.title,
+    photo_list: good.photo_list,
+    price: parseFloat(good.price.$numberDecimal),
+    count: good.count,
+  }))
 
   return (
     <>

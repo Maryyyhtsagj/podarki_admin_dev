@@ -26,12 +26,6 @@ import { ScrollContent } from "../../components/ScrollContent"
 import { StyleProp } from "../../settings/types/BaseTypes"
 import { DateHelper } from "../../helpers/DateHelper"
 
-// type SingleOrderType = {
-//   count: OrderItemCount
-//   finances: FinanceStatistics
-//   isOrder?: boolean
-//   store?: FinanceStore
-// }
 
 export const OrdersPage = () => {
   const { financesOrdersList, financeOrderStats, isFinancesLoad } =
@@ -75,17 +69,6 @@ export const OrdersPage = () => {
 
   const [selectedCity, setSelectedCity] = useState("")
 
-  // const handleCitySelect = (city: string) => {
-  //   setSelectedCity(city)
-  //   setList(financesList.filter((finance) => finance.store?.city === city))
-  // }
-
-  // useEffect(() => {
-  //   if (financesOrdersList.length > 0) {
-  //     const smallestDate = getSmallestDateFromOrders(financesOrdersList)
-  //     setStartDate(smallestDate)
-  //   }
-  // }, [financesOrdersList])
 
   useEffect(() => {
     dispatch(
@@ -98,10 +81,6 @@ export const OrdersPage = () => {
     console.log("Seller ID:", params.sellerId)
   }, [])
 
-  // useEffect(() => {
-  //   dispatch(getSingleOrder("674e4d53b97952bd4d722b62"))
-  //   console.log("Order ID:", params.order_id)
-  // }, [])
 
   useEffect(() => {
     if (load.current && sellerId) {
@@ -183,6 +162,7 @@ export const OrdersPage = () => {
               info={finances.info}
               finances={finances.finance}
               isOrder
+              goods={finances.info.goods}
             />
           ))}
         </ScrollContent>

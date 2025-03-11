@@ -26,6 +26,7 @@ export interface FinanceSellerUnit {
   order_number?: string
   ip?: string
   time?: object
+  goods: OrderItem[]
   phone_number: string
   storeName: string
   orderID?: string
@@ -67,31 +68,7 @@ export interface Price {
   $numberDecimal: string
 }
 
-// export interface SingleOrderResponse {
-//   _id: string
-//   title: string
-//   comment?: string | null
-//   goods: OrderItem[]
-//   goods_ids: string[]
-//   count: OrderItemCount[]
-//   delivery_city: string
-//   delivery_address: string
-//   delivery_date: string
-//   delivery_time: string
-//   delivery_price: Price
-//   full_amount: Price
-//   income: Price
-//   paid: boolean
-//   paidByAdmin: boolean
-//   paymentCard: string
-//   postcard?: string | null
-//   status_id?: string | null
-//   store_id: FinanceStore
-//   user_id: FinanceSellerUnit
-//   creationDate: string
-//   commission_percentage?: number
-//   phone_number: string
-// }
+
 
 export interface OrderItemCount {
   title: string
