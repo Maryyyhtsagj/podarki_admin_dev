@@ -106,11 +106,11 @@ export const OrderHeaderContent = (props: FinanceHeaderContentProps) => {
               changeDate={props.changeEndDate}
               minDate={props.startDate}
             />
-            <Dropdown
-              options={options}
-              selectedOption={selectedOption}
-              onSelect={setSelectedOption}
-            />
+            {/*<Dropdown*/}
+            {/*  options={options}*/}
+            {/*  selectedOption={selectedOption}*/}
+            {/*  onSelect={setSelectedOption}*/}
+            {/*/>*/}
           </RowContainerJustEnd>
         </CenterContainerFlex>
       </RowContainerBeetwenEndFlex>

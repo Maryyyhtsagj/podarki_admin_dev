@@ -292,17 +292,17 @@ export const ordersChangeStatus = createAsyncThunk(
   },
 )
 
-export const getSingleOrder = createAsyncThunk(
-  "sellers/getSingleOrder",
-  async (id: string, { rejectWithValue }) => {
-    try {
-      const response = await sellersService.getSingleOrder(id);
-      return response.data; // или response.data.data если у вас двойная обертка
-    } catch (error: any) {
-      return rejectWithValue(error.response.data);
-    }
-  }
-);
+// export const getSingleOrder = createAsyncThunk(
+//   "sellers/getSingleOrder",
+//   async (id: string, { rejectWithValue }) => {
+//     try {
+//       const response = await sellersService.getSingleOrder(id);
+//       return response.data; // или response.data.data если у вас двойная обертка
+//     } catch (error: any) {
+//       return rejectWithValue(error.response.data);
+//     }
+//   }
+// );
 
 export const postPayment = createAsyncThunk(
   "sellers/orders/payment",

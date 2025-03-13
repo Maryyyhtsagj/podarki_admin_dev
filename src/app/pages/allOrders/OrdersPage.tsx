@@ -11,7 +11,8 @@ import {
   FinanceSellerUnit,
   FinancesOrdersSeller,
   FinanceStatistics,
-  FinanceStore, OrderItemCount,
+  FinanceStore,
+  OrderItemCount,
 } from "../../modules/sellers/types/FinancesTypes"
 import { useParams } from "react-router-dom"
 import { OrderListItem } from "../allOrders/components/OrderListItem"
@@ -25,7 +26,6 @@ import { EmptyList } from "../../components/EmptyList"
 import { ScrollContent } from "../../components/ScrollContent"
 import { StyleProp } from "../../settings/types/BaseTypes"
 import { DateHelper } from "../../helpers/DateHelper"
-
 
 export const OrdersPage = () => {
   const { financesOrdersList, financeOrderStats, isFinancesLoad } =
@@ -46,29 +46,14 @@ export const OrdersPage = () => {
   const params = useParams()
   const sellerId = params.sellerId || "67474283c0952662fdb10ba7"
 
-  function getSmallestDateFromOrders(orders: any[]): Date | null {
-    let smallestDate: Date | null = null
-
-    orders.forEach((item) => {
-      const dateTimeString = item.info.dateTime
-
-      const formattedDateTimeString = `20${dateTimeString.substring(
-        6,
-        8,
-      )}-${dateTimeString.substring(3, 5)}-${dateTimeString.substring(0, 2)}`
-
-      const currentDate = new Date(formattedDateTimeString)
-
-      if (smallestDate === null || currentDate < smallestDate) {
-        smallestDate = currentDate
-      }
-    })
-
-    return smallestDate
-  }
-
   const [selectedCity, setSelectedCity] = useState("")
 
+  const handleCitySelect = (city: string) => {
+    setSelectedCity(city)
+    setList(
+      financesOrdersList.filter((finance) => finance.store?.city === city),
+    )
+  }
 
   useEffect(() => {
     dispatch(
@@ -80,7 +65,6 @@ export const OrdersPage = () => {
     )
     console.log("Seller ID:", params.sellerId)
   }, [])
-
 
   useEffect(() => {
     if (load.current && sellerId) {
@@ -135,6 +119,8 @@ export const OrdersPage = () => {
         <HeaderWrapperUI $maxWidth={1600}>
           <OrderHeaderContent
             isOrder
+            selectCity={selectedCity}
+            onCitySelect={handleCitySelect}
             searchValue={search}
             searchChange={handleSearchChange}
             startDate={startDate}

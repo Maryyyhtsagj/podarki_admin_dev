@@ -11,10 +11,6 @@ import { LineTextVertical } from "../ui/LineTextVertical"
 import { DateHelper } from "../../../helpers/DateHelper"
 import { ColorsUI } from "../../../template/styles/ColorUI"
 import styled from "styled-components"
-import {
-  getSingleOrder,
-  selectSellersValues,
-} from "../../../modules/sellers/SellersSlice"
 
 type TableItem = {
   title: string
@@ -134,13 +130,16 @@ const OrderTable: React.FC<TableProps> = ({ items }) => {
                 <TextUI ag={Ag["400_14"]} text={item.title} />
               </FirstCell>
               <Cell>
-                <TextUI ag={Ag["400_14"]} text={`${item.count}`} />
+                <TextUI ag={Ag["400_14"]} text={`х${item.count}`} />
               </Cell>
               <Cell>
-                <TextUI ag={Ag["400_14"]} text={`${item.price}`} />
+                <TextUI ag={Ag["400_14"]} text={`${item.price}р`} />
               </Cell>
               <Cell>
-                <TextUI ag={Ag["400_14"]} text={`${item.price * item.count}`} />
+                <TextUI
+                  ag={Ag["400_14"]}
+                  text={`${item.price * item.count}р`}
+                />
               </Cell>
             </tr>
           ))}
@@ -200,19 +199,20 @@ export const OrderListItem: React.FC<FinanceListItemProps> = ({
                 <LineTextVertical />
                 <TextUI
                   ag={Ag["400_16"]}
-                  text={DateHelper.getFormatDateOfPoints(info.dateTime)}
+                  text={`Дата: ${
+                    info.time
+                      ? `${info.time.hours}:${String(
+                          info.time.minutes,
+                        ).padStart(2, "0")} - `
+                      : "НЕ УКАЗАНО"
+                  } ${DateHelper.getFormatDateOfPoints(info.dateTime)}`}
                 />
+
                 <LineTextVertical />
                 <TextUI
                   ag={Ag["400_16"]}
-                  text={`Время: ${
-                    info.time
-                      ? `${info.time.hours}:${info.time.minutes}`
-                      : "НЕ УКАЗАНО"
-                  }`}
+                  text={` Продавец: ${info.storeName}`}
                 />
-                <LineTextVertical />
-                <TextUI ag={Ag["400_16"]} text={`Магазин: ${info.storeName}`} />
               </>
             ) : (
               <TextUI
@@ -229,8 +229,21 @@ export const OrderListItem: React.FC<FinanceListItemProps> = ({
             />
             <LineTextVertical />
             <TextUI
+              ag={Ag["600_16"]}
+              text={`Стоимость: ${items.reduce(
+                (sum, item) => sum + item.price * item.count,
+                0,
+              )}р`}
+              color="#098341"
+            />
+
+            <LineTextVertical />
+            <TextUI
               ag={Ag["400_16"]}
-              text={`Стоимость: ${finances.payAmount}`}
+              text={`Позиций: ${items.reduce(
+                (sum, item) => sum + item.count,
+                0,
+              )}`}
             />
           </RowContainer>
         </MainContainer>
