@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d31aa0cd-ef09-46c8-b8c7-f6d04ee3b905" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/sellers/types/FinancesTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/sellers/types/FinancesTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,24 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/src/app/modules/sellers/models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "npm.proxy.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
-    "ts.external.directory.path": "/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/src/app/modules/sellers/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.proxy.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mary/Desktop/MyProjects/podarki/podarki-admin-dev/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/modules/sellers/models" />
@@ -154,6 +155,13 @@
       <workItem from="1741212188376" duration="1137000" />
       <workItem from="1741614596621" duration="8171000" />
       <workItem from="1741696722778" duration="30000" />
+      <workItem from="1741870861994" duration="16404000" />
+      <workItem from="1741899366602" duration="1003000" />
+      <workItem from="1741984894664" duration="17000" />
+      <workItem from="1741984988043" duration="864000" />
+      <workItem from="1742304601139" duration="1182000" />
+      <workItem from="1742313554353" duration="1250000" />
+      <workItem from="1742326333404" duration="1289000" />
     </task>
     <servers />
   </component>

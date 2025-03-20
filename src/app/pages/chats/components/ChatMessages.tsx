@@ -140,22 +140,31 @@ export const ChatMessages = () => {
     <Wrapper $mb={30} $ml={15} $mt={30} $maxWidth={600}>
       <ColumnContainerFlex $isRelative>
         <ScrollContent ref={scrollRef}>
-          {list.map((groupMessages, idx) => (
-            <MainContainer
-              $mb={list.length - 1 === idx ? 10 : 60}
-              key={DateHelper.getFormatDateOfBack(groupMessages.date)}
-            >
-              <TextUI
-                ag={Ag["400_12"]}
-                align={"center"}
-                mb={20}
-                text={DateHelper.getFormatLongDate(groupMessages.date)}
-              />
-              {groupMessages.messages.map((message) => (
-                <ChatMessageContainer key={message._id} message={message} />
-              ))}
-            </MainContainer>
-          ))}
+          {list.map(
+            (groupMessages, idx) =>
+              groupMessages.messages.length > 0 && (
+                <MainContainer
+                  $mb={list.length - 1 === idx ? 10 : 60}
+                  key={groupMessages.date}
+                >
+                  <TextUI
+                    ag={Ag["400_12"]}
+                    align={"center"}
+                    mb={20}
+                    text={DateHelper.getFormatLongDate(groupMessages.date)}
+                  />
+                  {groupMessages.messages.map(
+                    (message) =>
+                      message?.text?.trim() && (
+                        <ChatMessageContainer
+                          key={message._id}
+                          message={message}
+                        />
+                      ),
+                  )}
+                </MainContainer>
+              ),
+          )}
         </ScrollContent>
       </ColumnContainerFlex>
       <RowContainer>
