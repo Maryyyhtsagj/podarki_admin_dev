@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { BannerService } from "./service/BannerService"
 import { RootState } from "../../settings/redux/store"

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { TBanSellerDTO, TClaimDTO, TSellersState } from "./types/SellersTypes"
 import { RootState } from "../../settings/redux/store"

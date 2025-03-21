@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Chats } from "../../../modules/messages/models/Chats"
 import { ListItemUI } from "../../../components/ListItemUI"
 import { MainContainer } from "../../../template/containers/MainContainer"

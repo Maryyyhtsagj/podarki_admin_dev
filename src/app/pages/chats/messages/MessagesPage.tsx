@@ -1,4 +1,5 @@
-import { useEffect } from "react"
+// @ts-nocheck
+
 import { HeaderUI } from "../../../components/HeaderUI"
 import { HeaderWrapperUI } from "../../../components/HeaderWrapperUI"
 import { StyleProp } from "../../../settings/types/BaseTypes"

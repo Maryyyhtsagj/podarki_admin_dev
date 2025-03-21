@@ -6,7 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="d31aa0cd-ef09-46c8-b8c7-f6d04ee3b905" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/DatePickerUI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/DatePickerUI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/dropdown/Dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/dropdown/Dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/banner/BannerSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/banner/BannerSlice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/messages/MessagesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/messages/MessagesSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/sellers/SellersSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/sellers/SellersSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/modules/sellers/types/FinancesTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/sellers/types/FinancesTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/allOrders/OrdersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/allOrders/OrdersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/categories/components/CategoriesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/categories/components/CategoriesList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/chats/components/ChatMessages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/chats/components/ChatMessages.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/chats/components/ChatsCreateNotifContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/chats/components/ChatsCreateNotifContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/chats/components/ChatsListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/chats/components/ChatsListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/chats/messages/MessagesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/chats/messages/MessagesPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/finances/FinancesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/finances/FinancesPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceHeaderContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceHeaderContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/finances/orders/FinancesOrdersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/finances/orders/FinancesOrdersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/owners/OwnersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/owners/OwnersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/owners/components/OwnerButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/owners/components/OwnerButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +46,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -162,6 +183,10 @@
       <workItem from="1742304601139" duration="1182000" />
       <workItem from="1742313554353" duration="1250000" />
       <workItem from="1742326333404" duration="1289000" />
+      <workItem from="1742480024926" duration="3936000" />
+      <workItem from="1742508039071" duration="445000" />
+      <workItem from="1742555202723" duration="1851000" />
+      <workItem from="1742557080229" duration="1190000" />
     </task>
     <servers />
   </component>

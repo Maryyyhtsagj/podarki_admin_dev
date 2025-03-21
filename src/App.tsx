@@ -6,25 +6,12 @@ import { initAuth, selectAuthValues } from "./app/modules/auth/AuthSlice"
 import { FullLoader } from "./app/template/ui/FullLoader"
 import { getClaims } from "./app/modules/sellers/SellersSlice"
 import { Toaster } from "react-hot-toast"
-import { getFcmToken } from "./app/helpers/FirebaseConfig"
 
 export const App = () => {
   const { authUser } = useAppSelector(selectAuthValues)
   const dispatch = useAppDispatch()
 
   const [load, setLoad] = useState(true)
-
-  // useEffect(() => {
-  //   const initializeNotifications = async () => {
-  //     try {
-  //       await getFcmToken(true) // Pass `isSeller` based on your application's logic
-  //     } catch (error) {
-  //       console.error("Error initializing notifications:", error)
-  //     }
-  //   }
-  //
-  //   initializeNotifications()
-  // }, [])
 
   useEffect(() => {
     dispatch(initAuth())

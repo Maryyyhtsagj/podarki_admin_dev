@@ -46,7 +46,7 @@ export interface FinanceStore {
 export type TFinanceDTO = {
   startDate: string
   endDate: string
-  // sellerId?: string
+  sellerId?: string
 }
 
 export interface OrderItem {

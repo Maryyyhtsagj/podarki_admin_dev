@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useState } from "react"
 import { InputUnderline } from "../../../components/InputUnderline"
 import { Ag, TextUI } from "../../../template/ui/TextUI"

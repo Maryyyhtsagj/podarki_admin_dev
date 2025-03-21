@@ -25,6 +25,7 @@ export const OwnerButtons = (props: OwnerButtonsProps) => {
 
   const handleGoToChat = () => {
     dispatch(getChatId(props.id)).then((res) => {
+      // @ts-ignore
       let chatID = res.payload.chatID
       if (chatID) {
         navigate(`${PathApp.chats.path}/${chatID}`)

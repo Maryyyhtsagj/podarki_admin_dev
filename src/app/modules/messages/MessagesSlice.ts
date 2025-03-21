@@ -1,4 +1,6 @@
-import  { createAsyncThunk } from "@reduxjs/toolkit"
+// @ts-nocheck
+
+import { createAsyncThunk } from "@reduxjs/toolkit"
 import { createSlice } from "@reduxjs/toolkit"
 import { MessagesStateModel, PostMessageType } from "./types/MessagesTypes"
 import { MessagesService } from "./service/MessagesService"

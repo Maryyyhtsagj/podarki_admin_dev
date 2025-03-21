@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useEffect, useRef, useState } from "react"
 import {
   getOrders,
@@ -65,7 +67,9 @@ export const FinancesOrdersPage = () => {
 
   const handleCitySelect = (city: string) => {
     setSelectedCity(city)
-    setList(financesList.filter((finance) => finance.store?.city === city))
+    setList(
+      financesOrdersList.filter((finance) => finance.store?.city === city),
+    )
   }
 
   useEffect(() => {

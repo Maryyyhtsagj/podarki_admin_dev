@@ -2,8 +2,6 @@ import { forwardRef, useRef, useState } from "react"
 import DatePicker, { registerLocale } from "react-datepicker"
 import ru from "date-fns/locale/ru"
 
-registerLocale("ru", ru)
-
 import "react-datepicker/dist/react-datepicker.css"
 import { MainContainer } from "../template/containers/MainContainer"
 import {
@@ -15,6 +13,8 @@ import { Ag, TextUI } from "../template/ui/TextUI"
 import { DateHelper } from "../helpers/DateHelper"
 import styled from "styled-components"
 import { ColorsUI } from "../template/styles/ColorUI"
+
+registerLocale("ru", ru)
 
 type DatePickerUIProps = {
   date: Date

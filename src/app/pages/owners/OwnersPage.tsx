@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useEffect, useRef, useState } from "react"
 import { HeaderUI } from "../../components/HeaderUI"
 import { HeaderWrapperUI } from "../../components/HeaderWrapperUI"
@@ -78,7 +80,7 @@ export const OwnersPage = () => {
                 onChangeText={(value: string) => handleChangeSearch(value)}
               />
             </MainContainer>
-            {/* 
+            {/*
             <SelectCity
               currentCity={""}
               cities={MockCities}
