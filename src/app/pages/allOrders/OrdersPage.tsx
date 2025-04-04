@@ -16,7 +16,6 @@ import {
   FinanceStore,
   OrderItemCount,
 } from "../../modules/sellers/types/FinancesTypes"
-import { useParams } from "react-router-dom"
 import { OrderListItem } from "../allOrders/components/OrderListItem"
 import { OrderHeaderContent } from "./components/OrderHeaderContent"
 import { HeaderWrapperUI } from "../../components/HeaderWrapperUI"
@@ -45,9 +44,6 @@ export const OrdersPage = () => {
 
   const load = useRef(false)
 
-  const params = useParams()
-  const sellerId = params.sellerId || "67474283c0952662fdb10ba7"
-
   const [selectedCity, setSelectedCity] = useState("")
 
   const handleCitySelect = (city: string) => {
@@ -62,26 +58,23 @@ export const OrdersPage = () => {
       getOrders({
         startDate: DateHelper.getFormatDateDTO(startDate),
         endDate: DateHelper.getFormatDateDTO(endDate),
-        sellerId,
       }),
     )
-    console.log("Seller ID:", params.sellerId)
   }, [])
 
   useEffect(() => {
-    if (load.current && sellerId) {
+    if (load.current) {
       dispatch(
         getOrders({
           startDate: DateHelper.getFormatDateDTO(startDate),
           endDate: DateHelper.getFormatDateDTO(endDate),
-          sellerId,
         }),
       ).catch((error) => {
         console.error("Failed to fetch orders:", error.message)
       })
     }
     load.current = true
-  }, [endDate, sellerId])
+  }, [endDate])
 
   useEffect(() => {
     return () => {
@@ -164,3 +157,4 @@ const styles: StyleProp = {
     height: "100%",
   },
 }
+

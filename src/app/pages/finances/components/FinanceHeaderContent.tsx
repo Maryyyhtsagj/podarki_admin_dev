@@ -46,6 +46,8 @@ export const FinanceHeaderContent = (props: FinanceHeaderContentProps) => {
   const { financesList } = useAppSelector(selectSellersValues)
   const { currentSeller } = useAppSelector(selectSellersValues)
 
+
+
   let cities = financesList.map((finance) => finance.store?.city)
   let storeName = financesList.map((finance) => finance.store?.storeName)
 

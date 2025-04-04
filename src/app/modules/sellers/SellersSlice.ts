@@ -281,10 +281,10 @@ export const getOrders = createAsyncThunk(
   "sellers/orders",
   async (dto: TFinanceDTO) => {
     const orders = await sellersService.getOrders(dto)
-
     return orders
   },
 )
+
 export const ordersChangeStatus = createAsyncThunk(
   "sellers/orders/change-status",
   async (id: string) => {

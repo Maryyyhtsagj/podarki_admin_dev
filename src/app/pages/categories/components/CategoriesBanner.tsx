@@ -22,25 +22,33 @@ export const CategoriesBanner = () => {
   const bannerId = banner[banner.length - 1]?._id
 
   const [selectedImage, setSelectedImage] = useState<File | null>(null)
-  const [previewImage, setPreviewImage] = useState<string | null>(lastBannerImage || null)
+  const [previewImage, setPreviewImage] = useState<string | null>(
+    lastBannerImage || null,
+  )
 
   const handleImageChange = (e) => {
     const file = e.target.files[0]
     if (file) {
       setSelectedImage(file)
-      setPreviewImage(URL.createObjectURL(file)) // Temporary preview of the selected image
+      setPreviewImage(URL.createObjectURL(file))
     }
   }
 
   const handleDelete = async (banner_id: string) => {
     try {
       await dispatch(deleteBanner(banner_id)).unwrap()
-      dispatch(getBanner()) // Refresh the banner list
-      setPreviewImage(null) // Reset the preview image
+      dispatch(getBanner())
+      setPreviewImage(null)
     } catch (error) {
       console.error("Error deleting banner:", error)
     }
   }
+
+  useEffect(() => {
+    if (banner.length > 0) {
+      setPreviewImage(banner[banner.length - 1].url)
+    }
+  }, [banner])
 
   const handleUpload = async () => {
     try {
@@ -62,7 +70,7 @@ export const CategoriesBanner = () => {
             "Content-Type": "multipart/form-data",
             Authorization: `Bearer ${token}`,
           },
-        }
+        },
       )
 
       const imageUrl = response.data // Assuming this is the uploaded image URL
@@ -115,7 +123,7 @@ export const CategoriesBanner = () => {
         >
           <TextUI color={ColorsUI.white} ag={Ag["600_16"]} text={"Удалить"} />
         </ButtonUI>
-        <ButtonUI onClick={() => handleUpload()}>
+        <ButtonUI onClick={handleUpload} disabled={!selectedImage}>
           <TextUI color={ColorsUI.white} ag={Ag["600_16"]} text={"Загрузить"} />
         </ButtonUI>
       </RowContainerBeetwen>

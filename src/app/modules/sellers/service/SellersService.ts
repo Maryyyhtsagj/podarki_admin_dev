@@ -88,7 +88,6 @@ export class SellersService extends AbstractServiceRepository {
 
   getOrders = async (dto: TFinanceDTO) => {
     const { data } = await this.apiService.getOrders(dto)
-
     return this.create<FinancesOrders>(FinancesOrders, data)
   }
 

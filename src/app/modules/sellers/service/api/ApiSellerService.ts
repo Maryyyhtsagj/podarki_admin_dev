@@ -75,9 +75,7 @@ export class ApiSellerService extends AbstractApiRepository {
 
   getOrders = async (dto: TFinanceDTO) => {
     return this.apiClient.get({
-      url: `api/finances/orders?seller_id=${dto.sellerId!}&startDate=${
-        dto.startDate
-      }&endDate=${dto.endDate}`,
+      url: `api/finances/orders?startDate=${dto.startDate}&endDate=${dto.endDate}`,
     })
   }
 
