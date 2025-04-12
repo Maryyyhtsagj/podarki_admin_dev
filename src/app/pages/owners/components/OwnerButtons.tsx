@@ -4,7 +4,7 @@ import { MainContainer } from "../../../template/containers/MainContainer"
 import { ButtonUI } from "../../../template/ui/ButtonUI"
 import { RowContainer } from "../../../template/containers/RowContainer"
 import { PathApp } from "../../../routes/path/PathApp"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { useAppDispatch } from "../../../settings/redux/hooks"
 import { getChatId } from "../../../modules/messages/MessagesSlice"
 
@@ -16,6 +16,7 @@ type OwnerButtonsProps = {
 
 export const OwnerButtons = (props: OwnerButtonsProps) => {
   const navigate = useNavigate()
+
 
   let dispatch = useAppDispatch()
 

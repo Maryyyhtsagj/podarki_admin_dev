@@ -41,6 +41,7 @@ type FinanceListItemProps = {
 export const FinanceListItem = (props: FinanceListItemProps) => {
   const { info, finances, isOrder, store } = props
 
+  console.log("FinanceListItem info:", info);
   const navigate = useNavigate()
   let dispatch = useAppDispatch()
 
@@ -169,18 +170,18 @@ export const FinanceListItem = (props: FinanceListItemProps) => {
                 <TextUI ag={Ag["400_16"]} text={"Подробнее"} />
               </ButtonUI>
             </MainContainer>
-            <MainContainer $width={170}>
-              <ButtonUI
-                onClick={() => handlePaymentClick(info.orderID)}
-                $backColor={paymentTitle ? "transparent" : "green"}
-              >
-                <TextUI
-                  color={paymentTitle ? ColorsUI.green : ColorsUI.white}
-                  ag={Ag["400_16"]}
-                  text={paymentTitle ? paymentTitle : "Оплатить"}
-                />
-              </ButtonUI>
-            </MainContainer>
+            {/*<MainContainer $width={170}>*/}
+            {/*  <ButtonUI*/}
+            {/*    onClick={() => handlePaymentClick(info.orderID)}*/}
+            {/*    $backColor={paymentTitle ? "transparent" : "green"}*/}
+            {/*  >*/}
+            {/*    <TextUI*/}
+            {/*      color={paymentTitle ? ColorsUI.green : ColorsUI.white}*/}
+            {/*      ag={Ag["400_16"]}*/}
+            {/*      text={paymentTitle ? paymentTitle : "Оплатить"}*/}
+            {/*    />*/}
+            {/*  </ButtonUI>*/}
+            {/*</MainContainer>*/}
           </>
         ) : (
           <MainContainer $width={170}>
@@ -200,6 +201,7 @@ export const FinanceListItem = (props: FinanceListItemProps) => {
     </ListItemUI>
   )
 }
+
 
 const styles: StyleProp = {
   icon: {

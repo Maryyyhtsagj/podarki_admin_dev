@@ -10,9 +10,8 @@
       <change beforePath="$PROJECT_DIR$/src/app/modules/sellers/service/SellersService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/sellers/service/SellersService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/modules/sellers/service/api/ApiSellerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/sellers/service/api/ApiSellerService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/allOrders/OrdersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/allOrders/OrdersPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/categories/components/CategoriesBanner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/categories/components/CategoriesBanner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceHeaderContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceHeaderContent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/finances/components/FinanceListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/owners/components/OwnerButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/owners/components/OwnerButtons.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +177,9 @@
       <workItem from="1743750739480" duration="4701000" />
       <workItem from="1743758731840" duration="2125000" />
       <workItem from="1743762677267" duration="1348000" />
+      <workItem from="1743797675513" duration="969000" />
+      <workItem from="1743937342593" duration="1013000" />
+      <workItem from="1744477337670" duration="4139000" />
     </task>
     <servers />
   </component>

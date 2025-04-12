@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { useAppDispatch, useAppSelector } from "../../settings/redux/hooks"
 import {
   getFinances,
-  getOrders,
+  getOrders, getOrdersSecond,
   getSingleOrder,
   resetCurrentFinance,
   selectSellersValues,
@@ -55,7 +55,7 @@ export const OrdersPage = () => {
 
   useEffect(() => {
     dispatch(
-      getOrders({
+      getOrdersSecond({
         startDate: DateHelper.getFormatDateDTO(startDate),
         endDate: DateHelper.getFormatDateDTO(endDate),
       }),
@@ -65,7 +65,7 @@ export const OrdersPage = () => {
   useEffect(() => {
     if (load.current) {
       dispatch(
-        getOrders({
+        getOrdersSecond({
           startDate: DateHelper.getFormatDateDTO(startDate),
           endDate: DateHelper.getFormatDateDTO(endDate),
         }),
